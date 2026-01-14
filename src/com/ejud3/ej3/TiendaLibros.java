@@ -7,6 +7,7 @@ public class TiendaLibros {
 	String nombre;
 	Libro [] catalogo;
 	int posicionLibroNuevo;
+	static float precioTotalLibros;
 	
 	public TiendaLibros(String nombre) {
 		this.nombre=nombre;
@@ -16,6 +17,7 @@ public class TiendaLibros {
 	
 	public void agregarLibro(Libro lib) {
 		this.catalogo[posicionLibroNuevo]=lib;
+		precioTotalLibros = precioTotalLibros + lib.precio;
 		this.posicionLibroNuevo++;
 	}
 	
@@ -68,6 +70,10 @@ public class TiendaLibros {
 		
 		
 		
+	}
+	
+	public static void calcularTotalPrecios() {
+		System.out.println("El total de precios es: " + precioTotalLibros);
 	}
 	
 	

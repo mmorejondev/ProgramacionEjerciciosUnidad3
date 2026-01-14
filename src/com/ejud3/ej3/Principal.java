@@ -15,8 +15,11 @@ public class Principal {
 		
 		tienda.mostrarCatalogo();
 		
-		//tienda.buscarLibro();
+		tienda.buscarLibro();
 		tienda.buscarLibroExacto();
+		
+		TiendaLibros.calcularTotalPrecios();
+		
 		
 		
 		

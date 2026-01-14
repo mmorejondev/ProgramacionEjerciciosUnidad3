@@ -12,6 +12,7 @@ public class Persona {
 		this.apellidos=a;
 		this.dni=d;
 		matricula = new Asignatura[7];
+		
 	}
 	
 	public Persona(String n, String d) {
