@@ -17,7 +17,7 @@ public class TiendaLibros {
 	
 	public void agregarLibro(Libro lib) {
 		this.catalogo[posicionLibroNuevo]=lib;
-		precioTotalLibros = precioTotalLibros + lib.precio;
+		precioTotalLibros = precioTotalLibros + lib.precio; //esto lo cambiaremos cuando veamos la visibilidad
 		this.posicionLibroNuevo++;
 	}
 	
@@ -35,7 +35,7 @@ public class TiendaLibros {
 		String libroBuscado = teclado.nextLine();
 		boolean encontrado=false;
 		for (int i=0;i<this.catalogo.length;i++) {
-			if (this.catalogo[i]!=null) {
+			if (this.catalogo[i]!=null) {//A título tampoco deberíamos acceder, lo veremos cuando estudiemos visibilidad
 				if (this.catalogo[i].titulo.toUpperCase().contains(libroBuscado.toUpperCase())) {
 					System.out.println("Libro encontrado: " + this.catalogo[i].titulo);
 					encontrado=true;
