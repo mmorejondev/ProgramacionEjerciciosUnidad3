@@ -24,6 +24,37 @@ disponible (boolean, privado): Indica si el libro está disponible para préstam
 	public String getTitulo() {
 		return this.titulo;
 	}
+	public String getAutor() {
+		return this.autor;
+	}
+	
+	public void setTitulo(String titulo) {
+		this.titulo=titulo;
+	}
+	public int getAnioPublicacion() {
+		return anioPublicacion;
+	}
+	public void setAnioPublicacion(int anioPublicacion) {
+		this.anioPublicacion = anioPublicacion;
+	}
+	public boolean getDisponible() {
+		return disponible;
+	}
+	public void setDisponible(boolean d) {
+		this.disponible = d;
+	}
+	public void setAutor(String a) {
+		if (a!=null) {
+			if (a.length()>0 && a.length()<256) {
+				this.autor = a;
+			}
+		}
+	}
+	
+	
+	
+	
+	
 	
 	
 	
