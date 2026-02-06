@@ -15,7 +15,6 @@ public class Libro extends ItemMultimedia{
 		
 	}
 
-	
 	//Las dos siguientes vienen de la interfaz Contenido Descargable
 	@Override
 	public void descargar() {
