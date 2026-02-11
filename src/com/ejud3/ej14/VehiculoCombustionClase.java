@@ -3,6 +3,7 @@ package com.ejud3.ej14;
 public class VehiculoCombustionClase implements VehiculoCombustion{
 
 	
+	
 	@Override
 	public void recargarCombustible(int cantidadLitros) {
 		if (cantidadLitros<=CAPACIDAD_TANQUE) {
