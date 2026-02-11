@@ -35,6 +35,9 @@ public class Principal {
         // ==============================
         // ARRAY DE PAGABLES
         // ==============================
+        /* Podríamos usar un array de la interfaz Pagable
+         * si sólo tuvierámos que hacer uso de los métodos de la intefaz
+         * (calcularSalario en este caso)*/
         Pagable[] pagables = new Pagable[3];
         pagables[0]=g1;
         pagables[1]=p1;
