@@ -23,7 +23,7 @@ public class ClasePrincipal {
 		
 		for (int i=0;i<objetos.length;i++) {
 			
-			if (objetos[i] instanceof Object) {
+			if (objetos[i] instanceof Persona) {
 				numeroInstanciasDePersona++;
 			}
 			
@@ -46,6 +46,8 @@ public class ClasePrincipal {
 		System.out.println("Número de alumnos: " + numeroDeAlumnos);
 		System.out.println("Número de profesores: " + numeroDeProfesores);
 		System.out.println("Número de otras clases: " + numeroDeOtrasClases);
+		
+		
 		
 	}
 	
