@@ -12,6 +12,10 @@ public class Bateria {
 	private double capacidad;
 	private double capacidadMaxima;
 
+	public Bateria(double capacidad, double capacidadMaxima) {
+		this.capacidad = capacidad;
+		this.capacidadMaxima = capacidadMaxima;
+	}
 	
 	public double getCapacidad() {
 		return capacidad;
@@ -23,11 +27,12 @@ public class Bateria {
 	}
 
 
-	public Bateria(double capacidad, double capacidadMaxima) {
-		this.capacidad = capacidad;
-		this.capacidadMaxima = capacidadMaxima;
-	}
 	
+	
+	public double getCapacidadMaxima() {
+		return capacidadMaxima;
+	}
+
 	public void mostrarInformacionBateria() {
 		System.out.println(this.toString());
 	}
