@@ -39,7 +39,6 @@ public class VehiculoCombustion extends Vehiculo{
 
 	@Override
 	public void mostrarInformacion() {
-		System.out.println(super.toString());
 		System.out.println(this.toString());
 		
 	}
@@ -47,7 +46,7 @@ public class VehiculoCombustion extends Vehiculo{
 	
 	@Override
 	public String toString() {
-		return "VehiculoCombustion [tipoCombustible=" + tipoCombustible + ", tanque=" + tanque + ", consumo=" + consumo
+		return super.toString() + "\n>>>>> VehiculoCombustion [tipoCombustible=" + tipoCombustible + ", tanque=" + tanque + ", consumo=" + consumo
 				+ "]";
 	}
 	

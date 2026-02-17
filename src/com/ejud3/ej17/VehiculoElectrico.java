@@ -43,14 +43,13 @@ public class VehiculoElectrico extends Vehiculo implements Recargable{
 	
 	@Override
 	public void mostrarInformacion() {
-		System.out.println(super.toString());
 		System.out.println(this.toString());
 		
 	}
 
 	@Override
 	public String toString() {
-		return "VehiculoElectrico [consumo=" + consumo + ", bateria=" + bateria + "]";
+		return super.toString() + "\n>>>>> VehiculoElectrico [consumo=" + consumo + ", bateria=" + bateria + "]";
 	}
 	
 	
