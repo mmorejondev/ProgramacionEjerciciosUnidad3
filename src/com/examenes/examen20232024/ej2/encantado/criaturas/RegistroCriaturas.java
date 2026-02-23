@@ -30,7 +30,7 @@ public class RegistroCriaturas {
     	criaturasMagicas.add(smaug);
     	criaturasMagicas.add(grendel); // Asumiendo que TrollDePiedra implementa Magico
 
-
+   
     	// Mostrar información de todas las criaturas
     	System.out.println("Todas las criaturas:");
     	for (Criatura criatura : todasLasCriaturas) {
